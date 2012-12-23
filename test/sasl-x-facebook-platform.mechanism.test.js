@@ -14,6 +14,9 @@
     it('should be named X-FACEBOOK-PLATFORM', function() {
       expect(mech.name).to.equal('X-FACEBOOK-PLATFORM');
     });
+    it('should not be client first', function() {
+      expect(mech.clientFirst).to.equal(false);
+    });
   });
   
   describe('response to challenge', function() {
@@ -22,7 +25,6 @@
     
     it('should encode credentials', function() {
       var enc = mech.response({ apiKey: 'app123', token: 'secret' });
-      console.log('enc: ' + enc);
       expect(enc).to.equal('method=GET&nonce=ABCDEFG&api_key=app123&access_token=secret&call_id=0&v=1.0');
     });
   });
