@@ -1,6 +1,6 @@
 {
   "name": "sasl-x-facebook-platform",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "JavaScript implementation of X-FACEBOOK-PLATFORM SASL mechanism.",
   "keywords": ["sasl", "facebook", "oauth", "auth", "authn", "authentication", "security"],
   "repository": {
