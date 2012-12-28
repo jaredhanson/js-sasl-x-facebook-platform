@@ -37,6 +37,7 @@
   },
   "volo": {
     "dependencies": {
+      "querystring": "github:anchorjs/querystring/master"
     }
   }
 }
